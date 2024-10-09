@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    height: 80vh;
+    background-image: url('Lore\ Olympus.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .animated-text {
+    font-size: 48px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff5733;
+  }
+  
+  /* Character Section */
+  #characters {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+  }
+  
+  .character-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .character-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .character-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .character-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* CTA Section */
+  #cta {
+    padding: 60px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  #cta p {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .hero-content {
+      padding: 10px;
+    }
+  
+    .animated-text {
+      font-size: 32px;
+    }
+  
+    .cta-button {
+      padding: 8px 16px;
+    }
+  }
+  
